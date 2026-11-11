@@ -1,0 +1,404 @@
+
+/* =================================
+   PREVORA ABOUT PAGE
+================================= */
+
+.about-page {
+  background: #0c1424;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.about-page .section {
+  padding: 100px 0;
+}
+
+.about-page .container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* =================================
+   INTRODUCTION
+================================= */
+
+.about-intro {
+  background: #0c1424;
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.about-intro-heading h2 {
+  max-width: 580px;
+  margin-top: 18px;
+  font-size: clamp(32px, 3.5vw, 45px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.about-intro-content {
+  padding-top: 8px;
+}
+
+.about-intro-content p {
+  margin-bottom: 19px;
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.about-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  color: #d6bd91;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.about-text-link:hover {
+  gap: 16px;
+}
+
+/* =================================
+   SECTION HEADINGS
+================================= */
+
+.about-section-heading {
+  max-width: 670px;
+  margin-bottom: 45px;
+}
+
+.about-section-heading h2 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: clamp(30px, 3.5vw, 42px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+}
+
+.about-section-heading > p {
+  max-width: 560px;
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* =================================
+   CAPABILITIES
+================================= */
+
+.about-capabilities {
+  background: #101b2d;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.capability-card {
+  min-height: 265px;
+  padding: 30px;
+  background: #142238;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.capability-card:hover {
+  transform: translateY(-5px);
+  background: #182940;
+  border-color: rgba(214, 189, 145, 0.4);
+}
+
+.capability-number {
+  display: inline-block;
+  margin-bottom: 45px;
+  color: #d6bd91;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.capability-card h3 {
+  margin-bottom: 13px;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.capability-card p {
+  color: #aeb6c5;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* =================================
+   MISSION & VISION
+================================= */
+
+.about-purpose {
+  background: #0c1424;
+}
+
+.about-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.purpose-card {
+  min-height: 310px;
+  padding: 42px;
+  background: #142238;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.purpose-card-highlight {
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(214, 189, 145, 0.12),
+      transparent 55%
+    ),
+    #17263b;
+  border-color: rgba(214, 189, 145, 0.2);
+}
+
+.purpose-card h3 {
+  max-width: 400px;
+  margin: 35px 0 17px;
+  font-size: clamp(25px, 3vw, 33px);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.7px;
+}
+
+.purpose-card p {
+  max-width: 450px;
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* =================================
+   PRINCIPLES
+================================= */
+
+.about-principles {
+  background: #101b2d;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.principle-card {
+  min-height: 250px;
+  padding: 27px 23px;
+  background: #142238;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.principle-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(214, 189, 145, 0.4);
+}
+
+.principle-number {
+  display: inline-block;
+  margin-bottom: 35px;
+  color: #d6bd91;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.principle-card h3 {
+  margin-bottom: 13px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.principle-card p {
+  color: #aeb6c5;
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+/* =================================
+   CALL TO ACTION
+================================= */
+
+.about-cta {
+  background: #0c1424;
+}
+
+.about-cta-inner {
+  padding: 75px 35px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(214, 189, 145, 0.13),
+      transparent 60%
+    ),
+    #142238;
+  border: 1px solid rgba(214, 189, 145, 0.17);
+  border-radius: 14px;
+}
+
+.about-cta-inner h2 {
+  max-width: 720px;
+  margin: 18px auto;
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.about-cta-inner > p {
+  max-width: 580px;
+  margin: 0 auto 30px;
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about-cta-inner .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 25px;
+  background: #d6bd91;
+  color: #101827;
+  border: 1px solid #d6bd91;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.about-cta-inner .btn:hover {
+  background: transparent;
+  color: #d6bd91;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1000px) {
+  .about-intro-grid {
+    gap: 45px;
+  }
+
+  .principles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .capabilities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+  .about-page .section {
+    padding: 65px 0;
+  }
+
+  .about-page .container {
+    width: calc(100% - 36px);
+  }
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about-intro-heading h2 {
+    font-size: 31px;
+  }
+
+  .about-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .about-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .capabilities-grid,
+  .about-purpose-grid,
+  .principles-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .capability-card {
+    min-height: 230px;
+    padding: 25px;
+  }
+
+  .capability-number {
+    margin-bottom: 32px;
+  }
+
+  .purpose-card {
+    min-height: auto;
+    padding: 30px 25px;
+  }
+
+  .purpose-card h3 {
+    margin-top: 28px;
+    font-size: 27px;
+  }
+
+  .principle-card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .principle-number {
+    margin-bottom: 25px;
+  }
+
+  .about-cta-inner {
+    padding: 55px 22px;
+  }
+
+  .about-cta-inner h2 {
+    font-size: 32px;
+  }
+}

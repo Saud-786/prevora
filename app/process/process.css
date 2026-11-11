@@ -1,0 +1,384 @@
+
+/* =================================
+   PREVORA PROCESS PAGE
+================================= */
+
+.process-page {
+  background: #0c1424;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.process-page .section {
+  padding: 100px 0;
+}
+
+.process-page .container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* INTRO */
+
+.process-intro {
+  background: #0c1424;
+}
+
+.process-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.process-intro-grid h2 {
+  max-width: 570px;
+  margin-top: 18px;
+  font-size: clamp(32px, 3.5vw, 45px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.process-intro-content p {
+  margin-bottom: 19px;
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.process-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  color: #d6bd91;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.process-text-link:hover {
+  gap: 16px;
+}
+
+/* SECTION HEADING */
+
+.process-section-heading {
+  max-width: 670px;
+  margin-bottom: 45px;
+}
+
+.process-section-heading h2 {
+  margin: 16px 0;
+  font-size: clamp(30px, 3.5vw, 42px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+}
+
+.process-section-heading p {
+  max-width: 570px;
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* PROCESS STEPS */
+
+.process-steps {
+  background: #101b2d;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.process-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  padding: 30px 27px;
+  background: #142238;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  background: #182940;
+  border-color: rgba(214, 189, 145, 0.4);
+}
+
+.process-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.process-number {
+  color: #d6bd91;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.process-card-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: #d6bd91;
+  border: 1px solid rgba(214, 189, 145, 0.3);
+  border-radius: 50%;
+  font-size: 15px;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.process-card:hover .process-card-arrow {
+  transform: rotate(45deg);
+  background: #d6bd91;
+  color: #0c1424;
+}
+
+.process-card h3 {
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.process-description {
+  margin-bottom: 25px;
+  color: #aeb6c5;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.process-deliverables {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.deliverables-label {
+  margin-bottom: 3px;
+  color: #d6bd91;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+
+.deliverable-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #c4cbd5;
+  font-size: 12px;
+}
+
+.deliverable-dot {
+  width: 5px;
+  height: 5px;
+  flex-shrink: 0;
+  background: #d6bd91;
+  border-radius: 50%;
+}
+
+/* COMMITMENTS */
+
+.process-commitments {
+  background: #0c1424;
+}
+
+.commitments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.commitment-card {
+  min-height: 235px;
+  padding: 30px;
+  background: #142238;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.commitment-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(214, 189, 145, 0.4);
+}
+
+.commitment-number {
+  display: inline-block;
+  margin-bottom: 35px;
+  color: #d6bd91;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.commitment-card h3 {
+  margin-bottom: 13px;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.commitment-card p {
+  color: #aeb6c5;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* CTA */
+
+.process-cta {
+  background: #101b2d;
+}
+
+.process-cta-inner {
+  padding: 75px 35px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(214, 189, 145, 0.13),
+      transparent 60%
+    ),
+    #142238;
+  border: 1px solid rgba(214, 189, 145, 0.17);
+  border-radius: 14px;
+}
+
+.process-cta-inner h2 {
+  max-width: 720px;
+  margin: 18px auto;
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.process-cta-inner p {
+  max-width: 580px;
+  margin: 0 auto 30px;
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.process-cta-inner .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 25px;
+  background: #d6bd91;
+  color: #101827;
+  border: 1px solid #d6bd91;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.process-cta-inner .btn:hover {
+  background: transparent;
+  color: #d6bd91;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .process-intro-grid {
+    gap: 45px;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .process-page .section {
+    padding: 65px 0;
+  }
+
+  .process-page .container {
+    width: calc(100% - 36px);
+  }
+
+  .process-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .process-intro-grid h2 {
+    font-size: 31px;
+  }
+
+  .process-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .process-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .process-grid,
+  .commitments-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .process-card {
+    min-height: 350px;
+    padding: 25px 22px;
+  }
+
+  .process-card-top {
+    margin-bottom: 28px;
+  }
+
+  .commitment-card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .commitment-number {
+    margin-bottom: 25px;
+  }
+
+  .process-cta-inner {
+    padding: 55px 22px;
+  }
+
+  .process-cta-inner h2 {
+    font-size: 32px;
+  }
+}

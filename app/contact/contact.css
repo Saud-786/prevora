@@ -1,0 +1,407 @@
+
+/* =================================
+   PREVORA CONTACT PAGE
+================================= */
+
+.contact-page {
+  background: #0c1424;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.contact-page .section {
+  padding: 100px 0;
+}
+
+.contact-page .container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* MAIN LAYOUT */
+
+.contact-main {
+  background: #0c1424;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+/* CONTACT INFORMATION */
+
+.contact-information {
+  padding-top: 12px;
+}
+
+.contact-information h2,
+.contact-form-wrapper h2 {
+  margin-top: 17px;
+  margin-bottom: 18px;
+  font-size: clamp(30px, 3.5vw, 42px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+}
+
+.contact-intro-text,
+.contact-form-description {
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.contact-intro-text {
+  max-width: 470px;
+  margin-bottom: 35px;
+}
+
+/* CONTACT DETAILS */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.contact-detail {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.contact-detail-number {
+  color: #d6bd91;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 3px;
+}
+
+.contact-detail h3 {
+  margin-bottom: 7px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contact-detail a {
+  display: block;
+  margin-bottom: 5px;
+  color: #d6bd91;
+  font-size: 14px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+  color: #f0dfc1;
+}
+
+.contact-detail-action {
+  color: #8995a8;
+  font-size: 11px;
+}
+
+/* OFFICES */
+
+.contact-offices {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-offices-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.contact-office {
+  padding: 20px;
+  background: #142238;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+}
+
+.contact-office > span {
+  color: #d6bd91;
+  font-size: 11px;
+}
+
+.contact-office h3 {
+  margin-top: 16px;
+  margin-bottom: 5px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.contact-office p {
+  color: #aeb6c5;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.contact-office small {
+  display: inline-block;
+  margin-top: 14px;
+  color: #d6bd91;
+  font-size: 10px;
+}
+
+/* FORM WRAPPER */
+
+.contact-form-wrapper {
+  padding: 38px;
+  background: #142238;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+}
+
+.contact-form-description {
+  margin-bottom: 30px;
+}
+
+/* FORM FIELDS */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group label {
+  color: #e4e8ef;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form-group label span {
+  color: #8995a8;
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 15px;
+  background: #0c1424;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input,
+.form-group select {
+  min-height: 48px;
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #778399;
+}
+
+.form-group select {
+  color: #c4cbd5;
+  cursor: pointer;
+}
+
+.form-group select option {
+  background: #142238;
+  color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #d6bd91;
+}
+
+/* SUBMIT BUTTON */
+
+.contact-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 5px;
+  padding: 14px 20px;
+  background: #d6bd91;
+  color: #101827;
+  border: 1px solid #d6bd91;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-submit:hover {
+  background: transparent;
+  color: #d6bd91;
+}
+
+.form-note {
+  margin-top: -9px;
+  color: #8995a8;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* FINAL CTA */
+
+.contact-cta {
+  background: #101b2d;
+}
+
+.contact-cta-inner {
+  padding: 75px 35px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(214, 189, 145, 0.13),
+      transparent 60%
+    ),
+    #142238;
+  border: 1px solid rgba(214, 189, 145, 0.17);
+  border-radius: 14px;
+}
+
+.contact-cta-inner h2 {
+  max-width: 720px;
+  margin: 18px auto;
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.contact-cta-inner p {
+  max-width: 580px;
+  margin: 0 auto 30px;
+  color: #aeb6c5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.contact-cta-inner .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 25px;
+  background: #d6bd91;
+  color: #101827;
+  border: 1px solid #d6bd91;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-cta-inner .btn:hover {
+  background: transparent;
+  color: #d6bd91;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .contact-form-wrapper {
+    padding: 27px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .contact-page .section {
+    padding: 65px 0;
+  }
+
+  .contact-page .container {
+    width: calc(100% - 36px);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .contact-information h2,
+  .contact-form-wrapper h2 {
+    font-size: 31px;
+  }
+
+  .contact-details {
+    gap: 22px;
+    margin-bottom: 35px;
+  }
+
+  .contact-form-wrapper {
+    padding: 25px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-offices-grid {
+    gap: 12px;
+  }
+
+  .contact-office {
+    padding: 16px;
+  }
+
+  .contact-cta-inner {
+    padding: 55px 22px;
+  }
+
+  .contact-cta-inner h2 {
+    font-size: 32px;
+  }
+}
